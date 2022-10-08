@@ -28,4 +28,16 @@ else{
     echo "not equal";
 }
 
+//if else with logicall oprators.......
+
+if(2==2 or 3==3){
+    echo"equal";
+    }
+if(2==2 and 3==3){
+    echo"equal";
+    }
+else{
+    echo"not equal";
+}
+
 ?>
