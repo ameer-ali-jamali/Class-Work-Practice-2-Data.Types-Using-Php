@@ -141,26 +141,26 @@
 
     // Comdition discounts on bus tickets with age.....
 
-    $age = 18;
+    $age = 19;
     $location = "Lahore";
     $ticket = 1000;
 
-    if ($age <= 18) {
-        $dis = $ticket * 0.10;
+    if ($age <= 10) {
+        $dis = $ticket * 0.75;
         echo "This is Actual Ticket Price   = " . " " . $ticket . "  " . "You Got 10% Dicount  = " . $dis . "<h1>Welldone You Got 10% Discount on your ticket</h1>"
             .
             "Now You Will Pay " . " " . $ticket - $dis;
     } elseif ($age >= 18) {
-        $dis = $ticket * 0.20;
+        $dis = $ticket * 0.50;
         echo "This is Actual Ticket Price   = " . " " . $ticket . "  " . "You Got 20% Dicount  = " . $dis . "<h1>Welldone You Got 20% Discount on your ticket</h1>"
             .
             "Now You Will Pay " . " " . $ticket - $dis;
-    } elseif ($age >= 19 and $age <= 22) {
+    } elseif ($age >= 25) {
         $dis = $ticket * 0.30;
         echo "This is Actual Ticket Price   = " . " " . $ticket . "  " . "You Got 30% Dicount  = " . $dis . "<h1>Welldone You Got 30% Discount on your ticket</h1>"
             .
             "Now You Will Pay " . " " . $ticket - $dis;
-    } elseif ($age >= 23 and $age <= 30) {
+    } elseif ($age >= 30) {
         $dis = $ticket * 0.40;
         echo "This is Actual Ticket Price   = " . " " . $ticket . "  " . "You Got 40% Dicount  = " . $dis . "<h1>Welldone You Got 40% Discount on your ticket</h1>"
             .
