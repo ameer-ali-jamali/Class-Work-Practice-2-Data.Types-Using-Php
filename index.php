@@ -141,36 +141,58 @@
 
     // Comdition discounts on bus tickets with age.....
 
-    $age = 19;
-    $location = "Lahore";
-    $ticket = 1000;
+    // $age = 19;
+    // $location = "Lahore";
+    // $ticket = 1000;
 
-    if ($age <= 10) {
-        $dis = $ticket * 0.75;
-        echo "This is Actual Ticket Price   = " . " " . $ticket . "  " . "You Got 10% Dicount  = " . $dis . "<h1>Welldone You Got 10% Discount on your ticket</h1>"
+    // if ($age <= 10) {
+    //     $dis = $ticket * 0.75;
+    //     echo "This is Actual Ticket Price   = " . " " . $ticket . "  " . "You Got 10% Dicount  = " . $dis . "<h1>Welldone You Got 10% Discount on your ticket</h1>"
+    //         .
+    //         "Now You Will Pay " . " " . $ticket - $dis;
+    // } elseif ($age >= 18) {
+    //     $dis = $ticket * 0.50;
+    //     echo "This is Actual Ticket Price   = " . " " . $ticket . "  " . "You Got 20% Dicount  = " . $dis . "<h1>Welldone You Got 20% Discount on your ticket</h1>"
+    //         .
+    //         "Now You Will Pay " . " " . $ticket - $dis;
+    // } elseif ($age >= 25) {
+    //     $dis = $ticket * 0.30;
+    //     echo "This is Actual Ticket Price   = " . " " . $ticket . "  " . "You Got 30% Dicount  = " . $dis . "<h1>Welldone You Got 30% Discount on your ticket</h1>"
+    //         .
+    //         "Now You Will Pay " . " " . $ticket - $dis;
+    // } elseif ($age >= 30) {
+    //     $dis = $ticket * 0.40;
+    //     echo "This is Actual Ticket Price   = " . " " . $ticket . "  " . "You Got 40% Dicount  = " . $dis . "<h1>Welldone You Got 40% Discount on your ticket</h1>"
+    //         .
+    //         "Now You Will Pay " . " " . $ticket - $dis;
+    // } else {
+    //     echo $age . "<h1>Please Enter Correct  Age Value</h1>";
+    // }
+
+
+    /////////
+
+
+    $age = 17;
+    $sallery = 10000;
+    $relashonship = "married";
+
+    if ($age <= 18 and $relashonship == "married") {
+        $dis = $sallery * 0.05;
+        echo "This is total Sallery   = " . " " . $sallery . "  " . "After Discount This is = " . $dis . "<h1>Welldone You Got 10% Discount</h1>"
             .
-            "Now You Will Pay " . " " . $ticket - $dis;
-    } elseif ($age >= 18) {
-        $dis = $ticket * 0.50;
-        echo "This is Actual Ticket Price   = " . " " . $ticket . "  " . "You Got 20% Dicount  = " . $dis . "<h1>Welldone You Got 20% Discount on your ticket</h1>"
+            "<h1> After 0.5% Added Now Total Sallery is </h1>" . " " . $sallery + $dis;
+    } elseif ($age >= 18  and $age <= 24 and $relashonship == "unmarried") {
+        // $dis = $sallery * 0.20;
+        echo "This is total Sallery   = " . " " . $sallery . "  " . "Sorry You are not married you didnt get any discount  = ";
+    } elseif ($age >= 30  and $relashonship == "married") {
+        $dis = $sallery * 0.20;
+        echo "This is total Sallery  = " . " " . $sallery . "  " . "After Discount This is = " . $dis . "<h1>Welldone You Got 30% Discount</h1>"
             .
-            "Now You Will Pay " . " " . $ticket - $dis;
-    } elseif ($age >= 25) {
-        $dis = $ticket * 0.30;
-        echo "This is Actual Ticket Price   = " . " " . $ticket . "  " . "You Got 30% Dicount  = " . $dis . "<h1>Welldone You Got 30% Discount on your ticket</h1>"
-            .
-            "Now You Will Pay " . " " . $ticket - $dis;
-    } elseif ($age >= 30) {
-        $dis = $ticket * 0.40;
-        echo "This is Actual Ticket Price   = " . " " . $ticket . "  " . "You Got 40% Dicount  = " . $dis . "<h1>Welldone You Got 40% Discount on your ticket</h1>"
-            .
-            "Now You Will Pay " . " " . $ticket - $dis;
+            "<h1> After 30% Added Now Total Sallery is </h1>" . " " . $sallery + $dis;
     } else {
         echo $age . "<h1>Please Enter Correct  Age Value</h1>";
     }
-
-
-
 
     ?>
 
