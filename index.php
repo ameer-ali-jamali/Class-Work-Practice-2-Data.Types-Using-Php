@@ -29,6 +29,8 @@
 
     <?php
 
+
+
     // // // Print Functions;
     // // //if else conditions...
     // $a = 2;
@@ -105,34 +107,67 @@
     //     echo "error";
     // }
 
-    //Percentage condition function calculate percentage of each brand..
 
+    //Percentage condition function calculate percentage of each employee with his age ....
 
+    // $age = 18;
+    // $service = "1 years";
+    // $sallery = 30040.67;
 
-    function nnn()
-
-    {
-        $name = "<script> var nam = prompt('Please Enter your Name .....')</script>";
-        $brand = "<script> prompt(parseInt('Please Enter Phone Brand Name....'))</script>";
-        $price = "<script> prompt(parseInt('Please Enter Price Of phone'))</script>";
-        $relashonship = "<script> prompt(parseInt('R You Married ?????'))</script>";
-
-        if ($name == "am") {
-            echo "<script> alert ('Welldone !!! .....')</script>";
-        }
-    }
-
-
-    // else {
-    //     echo "<script> alert ('Next Time !!! .....')</script>";
+    // if ($service == "1 years" and $age <= 18) {
+    //     $dis = $sallery * 0.10;
+    //     echo "This is total Sallery   = " . " " . $sallery . "  " . "After Discount This is = " . $dis . "<h1>Welldone You Got 10% Discount</h1>"
+    //         .
+    //         "<h1> After 10% Added Now Total Sallery is </h1>" . " " . $sallery + $dis;
+    // } elseif ($service == "2 years" and $age >= 18) {
+    //     $dis = $sallery * 0.20;
+    //     echo "This is total Sallery   = " . " " . $sallery . "  " . "After Discount This is = " . $dis . "<h1>Welldone You Got 20% Discount</h1>"
+    //         .
+    //         "<h1> After 20% Added Now Total Sallery is </h1>" . " " . $sallery + $dis;
+    // } elseif ($service == "3 years" and $age >= 19 and $age <= 22) {
+    //     $dis = $sallery * 0.30;
+    //     echo "This is total Sallery  = " . " " . $sallery . "  " . "After Discount This is = " . $dis . "<h1>Welldone You Got 30% Discount</h1>"
+    //         .
+    //         "<h1> After 30% Added Now Total Sallery is </h1>" . " " . $sallery + $dis;
+    // } elseif ($service == "4 years" and $age >= 23 and $age <= 30) {
+    //     $dis = $sallery * 0.40;
+    //     echo "This is total Sallery  = " . " " . $sallery . " " . "After Discount This is  = " . $dis . "<h1>Welldone You Got 40% Discount</h1>"
+    //         .
+    //         "<h1> After 40% Added Now Total Sallery is </h1>" . " " . $sallery + $dis;
+    // } else {
+    //     echo $age . "<h1>Please Enter Correct  Age Value</h1>";
     // }
 
-    // echo $name, $brand, $price, $relashonship;
-    // if ($brand == "apple" and $price >= 1000 and $relashonship == "married") {
-    //     echo "<script>alert('Thankyou For Your Response')</>";
-    // } else {
-    //     echo "<script>alert('Please Enter Data')</>";
-    // }  //prompt function
+
+    // Comdition discounts on bus tickets with age.....
+
+    $age = 18;
+    $location = "Lahore";
+    $ticket = 1000;
+
+    if ($age <= 18) {
+        $dis = $ticket * 0.10;
+        echo "This is Actual Ticket Price   = " . " " . $ticket . "  " . "You Got 10% Dicount  = " . $dis . "<h1>Welldone You Got 10% Discount on your ticket</h1>"
+            .
+            "Now You Will Pay " . " " . $ticket - $dis;
+    } elseif ($age >= 18) {
+        $dis = $ticket * 0.20;
+        echo "This is Actual Ticket Price   = " . " " . $ticket . "  " . "You Got 20% Dicount  = " . $dis . "<h1>Welldone You Got 20% Discount on your ticket</h1>"
+            .
+            "Now You Will Pay " . " " . $ticket - $dis;
+    } elseif ($age >= 19 and $age <= 22) {
+        $dis = $ticket * 0.30;
+        echo "This is Actual Ticket Price   = " . " " . $ticket . "  " . "You Got 30% Dicount  = " . $dis . "<h1>Welldone You Got 30% Discount on your ticket</h1>"
+            .
+            "Now You Will Pay " . " " . $ticket - $dis;
+    } elseif ($age >= 23 and $age <= 30) {
+        $dis = $ticket * 0.40;
+        echo "This is Actual Ticket Price   = " . " " . $ticket . "  " . "You Got 40% Dicount  = " . $dis . "<h1>Welldone You Got 40% Discount on your ticket</h1>"
+            .
+            "Now You Will Pay " . " " . $ticket - $dis;
+    } else {
+        echo $age . "<h1>Please Enter Correct  Age Value</h1>";
+    }
 
 
 
