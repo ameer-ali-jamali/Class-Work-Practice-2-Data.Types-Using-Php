@@ -1,5 +1,9 @@
-# Class-Work-Practice-1-Using-Php
+# PHP DataTypes
+Data type specifies the type of value a variable requires to do various operations without causing an error. By default, PHP provides the following built-in data types:
 
-today is our first class on php we learning php echo print and more
-
-sir gave me some tasks and i finished it all :)
+String ,
+Integer ,
+Float ,
+Boolean ,
+Array ,
+NULL 
